@@ -79,3 +79,207 @@ django.db.utils.ProgrammingError: (1146, "Table 'blog.app_article' doesn't exist
 ERROR 2017-10-07 10:24:31,582 views 13373 140030823622400 邮件发送失败: Error 111 connecting to localhost:6379. Connection refused.
 ERROR 2017-10-07 11:02:40,385 views 26434 139984518506240 邮件发送失败: (535, b'5.7.8 authentication failed')
 ERROR 2017-10-07 11:03:13,011 views 26595 140543109977856 邮件发送失败: (535, b'5.7.12 SMTP access disabled')
+ERROR 2017-12-13 18:39:39,191 exception 11240 6528 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\pywork\blog\app\templatetags\paginate_tags.py", line 5
+SyntaxError: Non-ASCII character '\xe8' in file E:\pywork\blog\app\templatetags\paginate_tags.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+ERROR 2017-12-13 18:41:44,229 exception 11240 10700 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\pywork\blog\app\templatetags\paginate_tags.py", line 5
+SyntaxError: Non-ASCII character '\xe8' in file E:\pywork\blog\app\templatetags\paginate_tags.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+ERROR 2017-12-13 18:41:55,109 exception 8516 10756 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\pywork\blog\app\templatetags\paginate_tags.py", line 5
+SyntaxError: Non-ASCII character '\xe8' in file E:\pywork\blog\app\templatetags\paginate_tags.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+ERROR 2017-12-13 18:43:19,665 exception 7208 10892 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\pywork\blog\app\templatetags\paginate_tags.py", line 5
+SyntaxError: Non-ASCII character '\xe8' in file E:\pywork\blog\app\templatetags\paginate_tags.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+ERROR 2017-12-13 18:44:11,198 exception 7412 10484 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\pywork\blog\app\templatetags\paginate_tags.py", line 5
+SyntaxError: Non-ASCII character '\xe8' in file E:\pywork\blog\app\templatetags\paginate_tags.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+ERROR 2017-12-13 18:45:36,464 exception 11208 10324 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\pywork\blog\blog\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "E:\pywork\blog\blog\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\pywork\blog\app\templatetags\paginate_tags.py", line 5
+SyntaxError: Non-ASCII character '\xe8' in file E:\pywork\blog\app\templatetags\paginate_tags.py on line 5, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
